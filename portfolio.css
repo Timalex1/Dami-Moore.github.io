@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header nav img {
+    width: 50px;
+    display: none;
+}
+
+nav {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+
+header nav .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    opacity: 1;
+}
+
+a {  
+  text-decoration: none;
+  color: black;
+}
+
+
+
+main #about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+#about img {    
+    width: 30%;
+    margin-top: 3.125rem;
+}
+
+#about p {
+    width: 40%;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+main #skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+#skills i {
+    color: rgb(49, 47, 47);
+}
+
+#skills div {
+    text-align: center;
+}
+
+
+#skills p {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    text-align: start;
+    margin-bottom: 0;
+    padding-inline: 2rem;
+}
+
+#projects p {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    background-color: rgb(51, 48, 48);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 15rem;
+    border-radius: 10px;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    main #about {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #about p {
+        width: 90%;
+        text-align: center;
+    }
+
+    #about img {
+        margin-top: 1rem;
+        width: 40%;
+    }
+
+    header nav img {
+        display: unset;
+    }
+
+    header nav .menu {
+       position: absolute;
+       top: 7rem;
+       left: 50%;
+       display: block;
+       width: 50%;
+       background-color: rgb(100, 92, 92);
+       opacity: 0;
+       height: max-content;
+       transition: opacity 500ms ease-in-out;
+    
+    }
+
+
+    .menu p {
+        border-bottom: 0.7px solid rgb(223, 196, 196);
+        padding-inline-start: 1rem;
+        margin-top: 4rem;
+        padding-block-end: 1rem;
+    }
+    
+    
+ }
+
+
+@media only screen and (max-width: 526px) {
+
+    #about img {
+        width: 50%;
+    }
+
+    main h3 {
+        text-align: center;
+    }
+
+    main #skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+   }
+
+   #skills div {
+       width: 50%;
+   }
+
+   #skils div i {
+       width: 100%
+   }
+}
+
+@media only screen and (max-width: 320px) {
+    #about img {
+        width: 60%;
+    }
+
+    main #skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main h3 {
+        text-align: center;
+    }
+}
