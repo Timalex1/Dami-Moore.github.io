@@ -124,10 +124,11 @@ main h3 {
        position: absolute;
        top: 7rem;
        left: 50%;
-       display: block;
+       /* change the display to none */
+       display: none; 
        width: 50%;
        background-color: rgb(100, 92, 92);
-       opacity: 0;
+       /* opacity: 0; I am removing this front the code */ 
        height: max-content;
        transition: opacity 500ms ease-in-out;
     

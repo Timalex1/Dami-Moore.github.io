@@ -2,12 +2,15 @@ const toggler = document.querySelector('#menu');
 
 const dropdown = document.querySelector('.menu');
 
-toggler.addEventListener('click', function () {
+toggler.addEventListener('click', function (e) {
+
+    e.preventDefault();
+
     
-    if(dropdown.style.getPropertyValue('opacity') === '0') {
-        dropdown.style.setProperty('opacity', '0.95');
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
     } else {
-        dropdown.style.setProperty('opacity', '0');
+        dropdown.style.display = 'block';
     }
 });
 
